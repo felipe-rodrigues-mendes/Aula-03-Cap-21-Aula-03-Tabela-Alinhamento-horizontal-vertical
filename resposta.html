@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabarito - Alinhamento em Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 400px;
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;      
+            vertical-align: middle;  
+        }
+
+        /* Alinhamento horizontal */
+        .direita {
+            text-align: right;
+        }
+
+        .esquerda {
+            text-align: left;
+        }
+
+        /* Alinhamento vertical */
+        .topo {
+            vertical-align: top;
+        }
+
+        .baixo {
+            vertical-align: bottom;
+        }
+
+        /* Linha mais alta para mostrar efeito do alinhamento vertical */
+        .linha-alta {
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Gabarito - Trabalhando com alinhamento</h1>
+    
+    <table>
+        <tr> <!-- Primeira linha -->
+            <td class="esquerda">A1<br>(esquerda)</td>
+            <td>B1<br>(padrão centro)</td>
+            <td class="direita">C1<br>(direita)</td>
+        </tr>
+        <tr class="linha-alta"> <!-- Segunda linha -->
+            <td class="topo">A2<br>(topo)</td>
+            <td>B2<br>(padrão)</td>
+            <td class="baixo">C2<br>(baixo)</td>
+        </tr>
+        <tr class="linha-alta"> <!-- Terceira linha -->
+            <td class="topo">A3<br>(topo)</td>
+            <td class="baixo">B3<br>(baixo)</td>
+            <td>C3<br>(padrão)</td>
+        </tr>
+        <tr> <!-- Quarta linha -->
+            <td>A4</td>
+            <td class="direita">1000<br>(número à direita)</td>
+            <td>C4</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
